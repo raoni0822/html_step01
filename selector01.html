@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector01</title>
+    <style>
+        /* 우선순위: #id>.class>tag */
+        #id {
+            color: blue;
+            /* padding<border<margin: 상 우 하 좌(=전체) /상하 /좌우 */
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        .class {
+            color: yellow;
+        }
+
+        div {
+            color: red;
+            background-color: #ddd;
+            width: 1200px;
+            border: 1px solid #333;
+            /* border: 1px(사이즈) solid(스타일) #333(선색); */
+            margin: 100px;
+            /* margin 겹침현상 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- class 이름 설정: 맨앞에 숫자 금지 -->
+    <div id="id" class="class">selector01</div>
+    <div class="class">selector01</div>
+    <div>selector01</div>
+    <div>selector01</div>
+    <div>selector01</div>
+</body>
+
+</html>

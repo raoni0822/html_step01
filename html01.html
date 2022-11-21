@@ -1,15 +1,104 @@
+<!-- 문서타입 선언문 -->
 <!DOCTYPE html>
+<!-- 언어설정 선언문 -->
 <html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 반응형 웹 만들때 필요 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* {속성: 속성값;} */
+        /* css 내부 스타일 주석 */
+        h1 {
+            color: tomato !important;
+            /* !important을 쓰면 JS보다 더 우선순위 */
+        }
+
+        li {
+            color: tomato;
+            color: blue;
+        }
+
+        ul {
+            color: #ddd;
+        }
+    </style>
+    <!-- h1같은거: 하나의 Selector -->
+    <!-- 지금은 css라서 하나의 Selector를 부른 듯? -->
+    <!-- 자식부터 color가 입힘 -->
+
 </head>
 
 <body>
-    <h1>HTML 01</h1>
+    <!-- 기본 box, 폰트 기본값: 16폰트 -->
+    <div>HTML 01</div>
+
+    <!-- 제목 box  -->
+    <h1 style="color: blue;">HTML 01</h1>
+    <!-- Javascript가 CSS보다 우선순위 -->
+    <h2>HTML 01</h2>
+    <h3>HTML 01</h3>
+    <h4>HTML 01</h4>
+    <h5>HTML 01</h5>
+    <h6>HTML 01</h6>
+
+    <!-- UnorderList box -->
+    <ul>
+        <!-- ListItem -->
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+    </ul>
+
+    <!-- OrderList box-->
+    <ol>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+    </ol>
+
+    <!-- DefinitionList box -->
+    <dl>
+        <!-- Definition title -->
+        <dt>HTML 01</dt>
+        <!-- Definition Descrtption -->
+        <dd>HTML 01</dd>
+        <dd>HTML 01</dd>
+        <dd>HTML 01</dd>
+    </dl>
+
+    <!-- paragraph: 문단, 안에 box를 넣을 수 X -->
+    <p>HTML 01</p>
+
+
+    <!-- InLine: 글자, 그림 -->
+    <a href="">HTML 01</a>
+    <strong>HTML 01</strong>
+    <em>HTML 01</em>
+    <span>HTML 01</span>
+
+
+    <!-- Semantic tag: 의미만 가지고 있는 tag -->
+
+    <!-- 페이지 위치 -->
+    <header>HTML 01</header>
+    <footer>HTML 01</footer>
+
+    <!-- 코드 구역 -->
+    <main>HTML 01</main>
+    <section>HTML 01</section>
+    <aside>HTML 01</aside>
+
+    <article>HTML 01</article>
+    <figure>HTML 01</figure>
+    <nav>HTML 01</nav>
 </body>
 
 </html>
